@@ -1,5 +1,7 @@
 import React from "react";
-
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 const Projects = () => {
   return (
     <>
@@ -11,108 +13,108 @@ const Projects = () => {
             </h2>
             <div className="separator" />
           </div>
-          <div className="projects-carousel owl-carousel owl-theme">
+          <OwlCarousel className="projects-carousel">
             <div className="item">
               <div>
-                <img src="images/resource/project-1.jpg" alt="" />
+                <img src="/images/resource/project-1.jpg" alt="" />
               </div>
               <div className="info">
                 <h3>
-                  <a href="project-single.html">Aqua Residence</a>
+                  <a href="project">Aqua Residence</a>
                 </h3>
                 <h4>
-                  <a href="project-single.html">Architecture</a>
+                  <a href="project">Architecture</a>
                 </h4>
-                <a href="project-single.html">
+                <a href="project">
                   <i className="fas fa-arrow-right" />
                 </a>
               </div>
             </div>
             <div className="item">
               <div>
-                <img src="images/resource/project-2.jpg" alt="" />
+                <img src="/images/resource/project-2.jpg" alt="" />
               </div>
               <div className="info">
                 <h3>
-                  <a href="project-single.html">Box Perspective</a>
+                  <a href="project">Box Perspective</a>
                 </h3>
                 <h4>
-                  <a href="project-single.html">Engineering</a>
+                  <a href="project">Engineering</a>
                 </h4>
-                <a href="project-single.html">
+                <a href="project">
                   <i className="fas fa-arrow-right" />
                 </a>
               </div>
             </div>
             <div className="item">
               <div>
-                <img src="images/resource/project-3.jpg" alt="" />
+                <img src="/images/resource/project-3.jpg" alt="" />
               </div>
               <div className="info">
                 <h3>
-                  <a href="project-single.html">Bricks High</a>
+                  <a href="project">Bricks High</a>
                 </h3>
                 <h4>
-                  <a href="project-single.html">Consulting</a>
+                  <a href="project">Consulting</a>
                 </h4>
-                <a href="project-single.html">
+                <a href="project">
                   <i className="fas fa-arrow-right" />
                 </a>
               </div>
             </div>
             <div className="item">
               <div>
-                <img src="images/resource/project-4.jpg" alt="" />
+                <img src="/images/resource/project-4.jpg" alt="" />
               </div>
               <div className="info">
                 <h3>
-                  <a href="project-single.html">Rustic Nature</a>
+                  <a href="project">Rustic Nature</a>
                 </h3>
                 <h4>
-                  <a href="project-single.html">Interior</a>
+                  <a href="project">Interior</a>
                 </h4>
-                <a href="project-single.html">
+                <a href="project">
                   <i className="fas fa-arrow-right" />
                 </a>
               </div>
             </div>
             <div className="item">
               <div>
-                <img src="images/resource/project-5.jpg" alt="" />
+                <img src="/images/resource/project-5.jpg" alt="" />
               </div>
               <div className="info">
                 <h3>
-                  <a href="project-single.html">Pool Party</a>
+                  <a href="project">Pool Party</a>
                 </h3>
                 <h4>
-                  <a href="project-single.html">Construction</a>
+                  <a href="project">Construction</a>
                 </h4>
-                <a href="project-single.html">
+                <a href="project">
                   <i className="fas fa-arrow-right" />
                 </a>
               </div>
             </div>
             <div className="item">
               <div>
-                <img src="images/resource/project-6.jpg" alt="" />
+                <img src="/images/resource/project-6.jpg" alt="" />
               </div>
               <div className="info">
                 <h3>
-                  <a href="project-single.html">Bar Concept</a>
+                  <a href="project">Bar Concept</a>
                 </h3>
                 <h4>
-                  <a href="project-single.html">Interior</a>
+                  <a href="project">Interior</a>
                 </h4>
-                <a href="project-single.html">
+                <a href="project">
                   <i className="fas fa-arrow-right" />
                 </a>
               </div>
             </div>
-          </div>
+          </OwlCarousel>
         </div>
         <br />
         <div className="text-center">
-          <a href="projects.html" className="theme-btn btn-style-one">
+          <a href="projects" className="theme-btn btn-style-one">
             more projects
           </a>
         </div>

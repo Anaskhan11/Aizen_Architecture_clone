@@ -2,9 +2,8 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import img1 from "../main-slider/image-1.jpg";
 import img2 from "../main-slider/image-2.jpg";
-import img3 from "../main-slider/image-1.jpg";
-
 import "bootstrap/dist/css/bootstrap.min.css";
+
 const CarouselPage = () => {
   return (
     <div>
@@ -17,37 +16,54 @@ const CarouselPage = () => {
             alt="First slide"
           />
           <Carousel.Caption>
-            <div
-              style={{
-                marginBottom: "4rem",
-                marginRight: "60rem",
-                color: "black",
-                position: "relative",
-              }}
-            >
-              <h1 style={{ fontSize: "3rem" }}>
+            <div>
+              <h1
+                style={{
+                  fontSize: "3rem",
+                  marginRight: "45rem",
+                  marginBottom: "2rem",
+                }}
+              >
                 We create living, breathing structures that inspire
               </h1>
             </div>
             <div
+              className="tp-parrallx-wrap"
               style={{
-                marginBottom: "30rem",
-                marginRight: "60rem",
-                color: "grey",
-                fontSize: "2rem",
+                position: "absolute",
+                display: "block",
+                visibility: "visible",
+                left: "90px",
+                top: "387px",
+                Zindex: "5",
               }}
             >
-              <h2 >
-                Together we ensure that each building fulfills their needs //
-                and goals, as unique manifestations of brand, mission and //
-                values
-              </h2>
+              <div
+                className="tp-loop-wrap"
+                style={{ position: "absolute", display: "block" }}
+              >
+                <div
+                  className="tp-mask-wrap"
+                  style={{
+                    position: "absolute",
+                    display: "block",
+                    overflow: "hidden",
+                    transform: "matrix(1, 0, 0, 1, 0, 0)",
+                  }}
+                >
+                  <h2 style={{ marginRight: "30rem" }}>
+                    Together we ensure that each building fulfills their needs
+                    and goals, as unique manifestations of brand, mission and
+                    values
+                  </h2>
+                </div>
+              </div>
             </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
           <img
-            style={{ height: "90vh" }}
+            style={{ height: "100vh" }}
             className="d-block w-100"
             src={img2}
             alt="Second slide"
@@ -56,21 +72,6 @@ const CarouselPage = () => {
           <Carousel.Caption>
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            style={{ height: "90vh" }}
-            className="d-block w-100"
-            src={img3}
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
