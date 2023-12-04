@@ -1,25 +1,25 @@
 import React from "react";
-import Slider from "./Component/Slider";
 import About from "./Component/About";
 import Projects from "./Component/Projects";
 import Services from "./Component/Services";
 import CounterSection from "./Component/CounterSection";
-import NewSection from "./Component/NewSection";
-import Testomonial from "./Component/Testomonial";
+import NewsSection from "./Component/NewsSection";
+import Client from "./Component/Client";
 import Header from "./Component/Header";
 import Footer from "./Component/Footer";
+import Corosel from "./Component/Corosel";
 const Layout = () => {
   return (
     <>
       <div>
         <Header />
-        <Slider />
+        <Corosel />
         <About />
         <Projects />
         <Services />
         <CounterSection />
-        <NewSection />
-        <Testomonial />
+        <NewsSection />
+        <Client />
         <Footer />
       </div>
     </>

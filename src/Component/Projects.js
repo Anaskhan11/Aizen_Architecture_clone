@@ -1,8 +1,38 @@
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+import Slider from "react-slick";
+
+import "../styles/Project.css";
+
 const Projects = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <section className="project-section-home">
@@ -13,7 +43,7 @@ const Projects = () => {
             </h2>
             <div className="separator" />
           </div>
-          <OwlCarousel className="projects-carousel">
+          <Slider {...settings} className="projects-carousel">
             <div className="item">
               <div>
                 <img src="/images/resource/project-1.jpg" alt="" />
@@ -46,16 +76,17 @@ const Projects = () => {
                 </a>
               </div>
             </div>
+            {/*  */}
             <div className="item">
               <div>
                 <img src="/images/resource/project-3.jpg" alt="" />
               </div>
               <div className="info">
                 <h3>
-                  <a href="project">Bricks High</a>
+                  <a href="project">Box Perspective</a>
                 </h3>
                 <h4>
-                  <a href="project">Consulting</a>
+                  <a href="project">Engineering</a>
                 </h4>
                 <a href="project">
                   <i className="fas fa-arrow-right" />
@@ -68,10 +99,10 @@ const Projects = () => {
               </div>
               <div className="info">
                 <h3>
-                  <a href="project">Rustic Nature</a>
+                  <a href="project">Box Perspective</a>
                 </h3>
                 <h4>
-                  <a href="project">Interior</a>
+                  <a href="project">Engineering</a>
                 </h4>
                 <a href="project">
                   <i className="fas fa-arrow-right" />
@@ -84,10 +115,10 @@ const Projects = () => {
               </div>
               <div className="info">
                 <h3>
-                  <a href="project">Pool Party</a>
+                  <a href="project">Box Perspective</a>
                 </h3>
                 <h4>
-                  <a href="project">Construction</a>
+                  <a href="project">Engineering</a>
                 </h4>
                 <a href="project">
                   <i className="fas fa-arrow-right" />
@@ -100,17 +131,18 @@ const Projects = () => {
               </div>
               <div className="info">
                 <h3>
-                  <a href="project">Bar Concept</a>
+                  <a href="project">Box Perspective</a>
                 </h3>
                 <h4>
-                  <a href="project">Interior</a>
+                  <a href="project">Engineering</a>
                 </h4>
                 <a href="project">
                   <i className="fas fa-arrow-right" />
                 </a>
               </div>
             </div>
-          </OwlCarousel>
+            {/* Add similar items for other projects */}
+          </Slider>
         </div>
         <br />
         <div className="text-center">

@@ -36,7 +36,7 @@ const Footer = () => {
                           <li>
                             <span>Email:</span>{" "}
                             <a
-                              href="/cdn-cgi/l/email-protection"
+                              href="#2"
                               className="__cf_email__"
                               data-cfemail="5c34393030331c3d3526393238392f353b32723f3331"
                             >
@@ -107,7 +107,7 @@ const Footer = () => {
             <div className="row clearfix">
               <div className="column col-md-6 col-sm-6 col-xs-12">
                 <div className="copyright">
-                  Copyright © 2023 Aizen Architecture. All Rights Reserved.{" "}
+                  Copyright © 2023 Aizen Architecture. All Rights Reserved.
                 </div>
               </div>
               <div className="column col-md-6 col-sm-6 col-xs-12">
