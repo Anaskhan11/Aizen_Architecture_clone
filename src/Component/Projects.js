@@ -76,7 +76,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            {/*  */}
+
             <div className="item">
               <div>
                 <img src="/images/resource/project-3.jpg" alt="" />
@@ -141,7 +141,6 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            {/* Add similar items for other projects */}
           </Slider>
         </div>
         <br />

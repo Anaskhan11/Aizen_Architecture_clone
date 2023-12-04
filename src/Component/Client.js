@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import "../styles/Client.css";
 
 const Client = () => {
   const settings = {
@@ -7,11 +8,10 @@ const Client = () => {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     arrows: false,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
-
     responsive: [
       {
         breakpoint: 1024,
@@ -42,7 +42,7 @@ const Client = () => {
 
   return (
     <div>
-      <section className="clients-section  grey-bg">
+      <section className="clients-section grey-bg">
         <div className="auto-container">
           <div className="title-box">
             <div className="title">
@@ -52,7 +52,7 @@ const Client = () => {
             <div className="separator" />
           </div>
           <div className="sponsors-outer">
-            <Slider {...settings}>
+            <Slider {...settings} className="clients-carousel">
               <div className="slide-item">
                 <figure className="image-box">
                   <a href="#1">

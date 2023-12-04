@@ -1,0 +1,42 @@
+/* Add this to your Client.css file */
+.clients-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.title-box {
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.separator {
+  width: 50px;
+  height: 3px;
+
+  margin: 15px auto;
+}
+
+.sponsors-outer {
+  margin-top: 30px;
+}
+
+.clients-carousel .slide-item {
+  margin: 0 10px;
+  border: none;
+}
+
+.clients-carousel .slide-item img {
+  max-width: 100%;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+}
