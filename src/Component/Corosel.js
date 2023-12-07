@@ -8,7 +8,7 @@ const Corosel = () => {
     infinite: true,
     speed: 500,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,

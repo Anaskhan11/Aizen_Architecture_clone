@@ -1,0 +1,94 @@
+/* ProjectSingleSection.css */
+
+.project-single-section {
+  padding: 40px 0; /* Adjust the padding as needed */
+}
+
+.auto-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-single-slider {
+  margin-top: 20px;
+}
+
+.project-single-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add border-radius or other styles as desired */
+}
+
+.project-info {
+  margin-top: 20px;
+}
+
+.project-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-info li {
+  margin-bottom: 5px;
+}
+
+/* Overview Section Styles */
+.overview {
+  margin-top: 20px;
+}
+
+.overview h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Challenge and Solutions Section Styles */
+.challenge {
+  margin-top: 20px;
+}
+
+.challenge h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.challenge p {
+  margin-bottom: 15px;
+}
+
+.challenge ul {
+  list-style: none;
+  padding: 0;
+}
+
+.challenge li {
+  margin-bottom: 5px;
+}
+
+/* Prev Next Section Styles */
+.prev-next {
+  margin-top: 20px;
+}
+
+.prev-next ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prev-next li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.prev-next a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Add more styles as needed */

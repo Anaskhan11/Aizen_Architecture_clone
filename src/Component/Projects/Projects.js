@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
-
-import "../styles/Project.css";
+import { Link } from "react-router-dom";
+import "../../styles/Project.css";
 
 const Projects = () => {
   const settings = {
@@ -145,9 +145,9 @@ const Projects = () => {
         </div>
         <br />
         <div className="text-center">
-          <a href="projects" className="theme-btn btn-style-one">
+          <Link to="/projects" className="theme-btn btn-style-one">
             more projects
-          </a>
+          </Link>
         </div>
       </section>
     </>

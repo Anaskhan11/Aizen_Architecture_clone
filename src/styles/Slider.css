@@ -23,11 +23,28 @@
   -ms-transition: opacity 0.9s, transform 0.9s;
   -o-transition: opacity 0.9s, transform 0.9s;
 }
+
 .slick-slide.slick-active .slick-caption {
   opacity: 1;
   transform: translateY(0);
 }
+
 .caption-inner {
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .slick-caption {
+    bottom: 5rem;
+    left: -5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .slick-caption {
+    bottom: 2rem;
+    left: 1rem;
+  }
 }

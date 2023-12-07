@@ -1,4 +1,3 @@
-
 .projects-carousel {
   margin: 25px 0;
 }
@@ -28,4 +27,40 @@
 
 .projects-carousel .info a i {
   margin-left: 5px;
+}
+
+/* Project section */
+/* Default styles for larger screens */
+
+.project-section {
+  padding: 60px 0; /* Adjust the padding as needed */
+}
+
+.filter-tabs {
+  padding: 15px 0; /* Adjust the padding as needed */
+}
+
+.filter-tabs li {
+  margin-right: 15px; /* Adjust the margin between filter tabs as needed */
+}
+
+.filter-list .gallery-block {
+  margin-bottom: 30px; /* Adjust the margin between gallery blocks as needed */
+}
+
+/* Responsive styles for smaller screens */
+
+@media (max-width: 767px) {
+  .filter-tabs {
+    text-align: center;
+  }
+
+  .filter-tabs li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .filter-list .gallery-block {
+    margin-bottom: 20px;
+  }
 }

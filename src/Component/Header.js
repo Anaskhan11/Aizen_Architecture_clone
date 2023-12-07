@@ -1,5 +1,6 @@
 import React from "react";
 import TopHeader from "./TopHeader";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -38,16 +39,16 @@ const Header = () => {
                   <div className="navbar-collapse collapse clearfix">
                     <ul className="navigation clearfix">
                       <li className="current">
-                        <a href="index">Home</a>
+                        <Link to="/">Home</Link>
                       </li>
                       <li>
-                        <a href="about">About Us</a>
+                        <Link to="/aboutus">About Us</Link>
                       </li>
                       <li>
-                        <a href="services">Services</a>
+                        <Link to="/services">Services</Link>
                       </li>
                       <li>
-                        <a href="projects">Projects</a>
+                        <Link to="/projects">Projects</Link>
                       </li>
                       <li className="dropdown">
                         <a href="#1">Pages</a>
@@ -62,7 +63,7 @@ const Header = () => {
                             <a href="faqs">Faqs</a>
                           </li>
                           <li>
-                            <a href="gallery">Gallery</a>
+                            <Link to="/gallery">Gallery</Link>
                           </li>
                           <li>
                             <a href="error-page">404 page</a>
@@ -73,7 +74,7 @@ const Header = () => {
                         <a href="blog">Blog</a>
                       </li>
                       <li>
-                        <a href="contact">Contact</a>
+                        <Link to="/contactus">Contact</Link>
                       </li>
                     </ul>
                   </div>

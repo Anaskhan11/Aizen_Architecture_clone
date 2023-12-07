@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <>
@@ -33,6 +33,11 @@ const About = () => {
                     lights.
                   </p>
                 </div>
+                <dir>
+                  <h2>
+                    <Link to="/aboutus">Read More</Link>
+                  </h2>
+                </dir>
               </div>
             </div>
             <div className="about-details-image col-md-6 col-sm-12 col-xs-12">
