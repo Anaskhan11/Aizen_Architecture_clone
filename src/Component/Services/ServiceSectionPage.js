@@ -20,7 +20,7 @@ const ServiceSectionPage = () => {
                   <img src="images/services/icon-1.svg" alt="" />
                 </div>
                 <h3>
-                  <a href="services-single.html">Architecture</a>
+                  <a href="services">Architecture</a>
                 </h3>
                 <div className="text">
                   Provides an opportunity to not only add beauty and structure

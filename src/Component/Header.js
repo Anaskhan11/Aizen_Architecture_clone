@@ -1,5 +1,6 @@
 import React from "react";
 import TopHeader from "./TopHeader";
+import "../styles/Header.css";
 import { Link } from "react-router-dom";
 const Header = () => {
   return (
@@ -13,14 +14,14 @@ const Header = () => {
             <div className="auto-container clearfix">
               <div className="pull-left logo-outer">
                 <div className="logo">
-                  <a href="index">
+                  <Link to="/">
                     <img
-                      src="images/logo.png"
+                      src="images/logos.png"
                       alt="Aizen - Architecture Template"
-                      title="Aizen - Architecture Template"
                     />
-                  </a>
+                  </Link>
                 </div>
+                <h2 className="h2logo">RealArc PVT LTD</h2>
               </div>
               <div className="pull-right upper-right clearfix">
                 <nav className="main-menu">

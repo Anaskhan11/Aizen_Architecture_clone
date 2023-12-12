@@ -1,6 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 const About = () => {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
       <section className="about-section-home">
@@ -13,24 +17,25 @@ const About = () => {
                     From undulating skyscrapers to marvelous museums
                   </div>
                   <h2>
-                    About <span>Aizen</span>
+                    About <span>RealArc PVT LTD</span>
                   </h2>
                   <div className="separator" />
                 </div>
                 <div className="text">
                   <p>
-                    Building design at its visionary best engages, exhilarates,
-                    and inspires. It possesses a quality—almost
-                    indescribable—that embodies design ingenuity, connection to
-                    place, and, above all, imagination. But today’s
-                    architectural monuments aren’t meant only to be admired from
-                    afar.
+                    RealArc Pvt LTD is a leading design and construction company
+                    providing Architecture, Interiors, Landscape, Town planning,
+                    engineering, construction and Project management under one
+                    roof by high professional experts.
                   </p>
+                  <h1>Why choose us?</h1>
                   <p>
-                    Together they conceived an asymmetrical structure clad in a
-                    skin of LED-illuminated glass-and-steel bricks, which every
-                    evening gives Icelanders a show as dazzling as the northern
-                    lights.
+                    RealArc (Pvt) Ltd are committed to looking beyond challenges
+                    by design and build solutions. RealArc has diverse
+                    experience of Multi-Storey Buildings; Housing Schemes,
+                    Retail, Commercial, Hospitality Projects, Luxury Villas,
+                    Farmhouses, Residential Interior Design and Landscape
+                    Projects.
                   </p>
                 </div>
                 <dir>

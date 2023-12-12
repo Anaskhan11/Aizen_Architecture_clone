@@ -1,0 +1,29 @@
+.logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  margin-top: -4rem;
+}
+
+.h2logo {
+  position: relative;
+  /* margin-bottom: 8rem; */
+  margin-left: 13rem;
+  margin-top: -10rem;
+  font-size: large;
+  font-weight: 1000;
+}
+
+/* Media query for responsiveness - adjust the max-width as needed */
+@media screen and (max-width: 768px) {
+  .logo {
+    flex-direction: column; /* Stack h2 and logo vertically on small screens */
+    align-items: flex-start; /* Align items to the start on small screens */
+  }
+
+  /* Adjust any other styles for small screens */
+  .h2logo {
+    margin-right: 20rem; /* Remove right margin on small screens */
+  }
+}
+

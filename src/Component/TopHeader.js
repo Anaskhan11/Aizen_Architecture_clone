@@ -8,12 +8,12 @@ const TopHeader = () => {
           <div className="clearfix">
             <div className="top-left">
               <ul className="clearfix">
-                <li>Welcome to Aizen Architecture Theme</li>
+                <li>Welcome to REAL ARC PVT LTD</li>
               </ul>
             </div>
             <div className="top-right clearfix">
               <ul className="clearfix">
-                <li>
+                <li style={{ color: "black" }}>
                   Follow us
                   <div className="social-links">
                     <a href="#1">

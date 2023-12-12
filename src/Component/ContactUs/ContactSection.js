@@ -1,6 +1,57 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+import { css } from "glamor";
 
 const ContactSection = () => {
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_94q02ch",
+        "template_jkl3tng",
+        form.current,
+        "FQb0VA9GIYBhmCTPW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const toastHandler = () => {
+    toast.success("Email Sent Sucessfully", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      className: css({
+        background: "#1ab394 !important",
+      }),
+    });
+
+    setValues({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
   return (
     <section className="contact-section">
       <div className="auto-container">
@@ -19,15 +70,15 @@ const ContactSection = () => {
 
               {/* Contact Form */}
               <div className="contact-form">
-                <form
-                  id="contact-form"
-                  action="https://www.brandifystudio.com/web/aizen/send.php"
-                  method="post"
-                >
+                <form id="contact-form" ref={form} onSubmit={sendEmail}>
                   <div className="row clearfix">
                     <div className="col-md-6 col-sm-6 col-xs-12 form-group">
                       <input
                         type="text"
+                        value={values.name}
+                        onChange={(e) => {
+                          setValues({ ...values, name: e.target.value });
+                        }}
                         name="name"
                         placeholder="Your Name"
                         required
@@ -38,12 +89,16 @@ const ContactSection = () => {
                       <input
                         type="email"
                         name="email"
+                        value={values.email}
+                        onChange={(e) => {
+                          setValues({ ...values, email: e.target.value });
+                        }}
                         placeholder="Email address"
                         required
                       />
                     </div>
 
-                    <div className="col-md-6 col-sm-6 col-xs-12 form-group">
+                    {/* <div className="col-md-6 col-sm-6 col-xs-12 form-group">
                       <input
                         type="text"
                         name="phone"
@@ -59,20 +114,28 @@ const ContactSection = () => {
                         placeholder="Subject"
                         required
                       />
-                    </div>
+                    </div> */}
 
                     <div className="col-md-12 col-sm-12 col-xs-12 form-group">
-                      <textarea name="message" placeholder="Message"></textarea>
+                      <textarea
+                        name="message"
+                        value={values.message}
+                        onChange={(e) => {
+                          setValues({ ...values, message: e.target.value });
+                        }}
+                        placeholder="Message"
+                      ></textarea>
                     </div>
 
                     <div className="col-md-12 col-sm-12 col-xs-12 form-group">
                       <button
                         className="theme-btn btn-style-one"
                         type="submit"
-                        name="submit-form"
+                        onClick={toastHandler}
                       >
                         Send message
                       </button>
+                      <ToastContainer />
                     </div>
                   </div>
                 </form>
@@ -92,15 +155,15 @@ const ContactSection = () => {
               </li>
               <li>
                 <span className="icon flaticon-smartphone"></span>
-                <div className="info-featured">+1 212-558-2995</div>
+                <div className="info-featured">0312-9358285</div>
               </li>
               <li>
                 <span className="icon flaticon-placeholder"></span>
                 <div className="text-info">Address</div>
                 <h3>
-                  525 7th Avenue - Suite 1601
+                  Bismillah Plaza, Jail Road
                   <br />
-                  New York, NY 10001
+                  Opposite Mardan Medical Complex, Mardan
                 </h3>
               </li>
 
