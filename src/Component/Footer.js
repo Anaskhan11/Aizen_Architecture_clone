@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/Footer.css";
 
 const Footer = () => {
   return (
@@ -12,10 +14,11 @@ const Footer = () => {
                   <div className="footer-column col-md-4 col-sm-6 col-xs-12">
                     <div className="footer-widget logo-widget">
                       <div className="logo">
-                        <a href="index.html">
-                          <img src="images/footer-logo.png" alt="" />
-                        </a>
+                        <Link to="/">
+                          <img src="images/logos.png" alt="" />
+                        </Link>
                       </div>
+                      <h2 className="realarc">RealArc PVT LTD</h2>
                       <div className="widget-content">
                         <div className="text">
                           Architecture provides an opportunity to improve the
@@ -40,15 +43,15 @@ const Footer = () => {
                               className="__cf_email__"
                               data-cfemail="5c34393030331c3d3526393238392f353b32723f3331"
                             >
-                              [email&nbsp;protected]
+                              info.realarc@gmail.com
                             </a>
                           </li>
                           <li>
-                            <span>Phone:</span> +1 212-558-2995
+                            <span>Phone:</span> 0312-9358285
                           </li>
                           <li>
-                            <span>Address:</span> 525 7th Avenue - Suite 1601,
-                            New York, NY 10001
+                            <span>Address:</span> Bismillah Plaza, Jail Road
+                            Opposite Mardan Medical Complex, Mardan
                           </li>
                         </ul>
                       </div>
@@ -107,7 +110,7 @@ const Footer = () => {
             <div className="row clearfix">
               <div className="column col-md-6 col-sm-6 col-xs-12">
                 <div className="copyright">
-                  Copyright © 2023 Aizen Architecture. All Rights Reserved.
+                  Copyright © 2023 RealArc PVT LTD. All Rights Reserved.
                 </div>
               </div>
               <div className="column col-md-6 col-sm-6 col-xs-12">

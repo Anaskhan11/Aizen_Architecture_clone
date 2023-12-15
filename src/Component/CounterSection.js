@@ -44,7 +44,7 @@ const CounterSection = () => {
                               data-speed={2000}
                               data-stop={220}
                             >
-                              0
+                              50
                             </span>
                           </div>
                           <h4 className="counter-title">Certified Engineers</h4>
@@ -58,7 +58,7 @@ const CounterSection = () => {
                               data-speed={2000}
                               data-stop={180}
                             >
-                              0
+                              200+
                             </span>
                           </div>
                           <h4 className="counter-title">Happy Clients</h4>
@@ -72,7 +72,7 @@ const CounterSection = () => {
                               data-speed={2000}
                               data-stop={600}
                             >
-                              0
+                              5
                             </span>
                           </div>
                           <h4 className="counter-title">Awards Won</h4>
@@ -86,7 +86,7 @@ const CounterSection = () => {
                               data-speed={2000}
                               data-stop={260}
                             >
-                              0
+                              330
                             </span>
                           </div>
                           <h4 className="counter-title">Projects Done</h4>

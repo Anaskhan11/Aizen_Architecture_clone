@@ -26,6 +26,7 @@ const GalleryApp = () => {
                   loop
                   muted
                   width={"100%"}
+                  height={"396px"}
                 />
               </Col>
 
@@ -62,7 +63,14 @@ const GalleryApp = () => {
                 <Row className="mt-3" style={{ marginTop: "2rem" }}>
                   <Col md={12}>
                     <Link to="/gallery">
-                      <Button variant="primary" style={{ width: "25rem" }}>
+                      <Button
+                        variant="primary"
+                        style={{
+                          width: "37rem",
+                          color: "black",
+                          backgroundColor: "yellow",
+                        }}
+                      >
                         More
                       </Button>
                     </Link>

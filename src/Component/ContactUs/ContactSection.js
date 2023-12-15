@@ -1,38 +1,26 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import { css } from "glamor";
 
 const ContactSection = () => {
-  const [values, setValues] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
   const form = useRef();
+  // const [values, setValues] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_94q02ch",
-        "template_jkl3tng",
-        form.current,
-        "FQb0VA9GIYBhmCTPW"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
-  const toastHandler = () => {
+    emailjs.sendForm(
+      "service_94q02ch",
+      "template_jkl3tng",
+      form.current,
+      "FQb0VA9GIYBhmCTPW"
+    );
     toast.success("Email Sent Sucessfully", {
       position: "top-right",
       autoClose: 5000,
@@ -44,12 +32,20 @@ const ContactSection = () => {
         background: "#1ab394 !important",
       }),
     });
-
-    setValues({
-      name: "",
-      email: "",
-      message: "",
-    });
+  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setValues((prevData) => ({
+  //     ...prevData,
+  //     [name]: value,
+  //   }));
+  // };
+  const toastHandler = () => {
+    // setValues({
+    //   name: "",
+    //   email: "",
+    //   message: "",
+    // });
   };
 
   return (
@@ -75,10 +71,8 @@ const ContactSection = () => {
                     <div className="col-md-6 col-sm-6 col-xs-12 form-group">
                       <input
                         type="text"
-                        value={values.name}
-                        onChange={(e) => {
-                          setValues({ ...values, name: e.target.value });
-                        }}
+                        // value={values.name}
+                        // onChange={handleChange}
                         name="name"
                         placeholder="Your Name"
                         required
@@ -89,10 +83,8 @@ const ContactSection = () => {
                       <input
                         type="email"
                         name="email"
-                        value={values.email}
-                        onChange={(e) => {
-                          setValues({ ...values, email: e.target.value });
-                        }}
+                        // value={values.email}
+                        // onChange={handleChange}
                         placeholder="Email address"
                         required
                       />
@@ -119,10 +111,8 @@ const ContactSection = () => {
                     <div className="col-md-12 col-sm-12 col-xs-12 form-group">
                       <textarea
                         name="message"
-                        value={values.message}
-                        onChange={(e) => {
-                          setValues({ ...values, message: e.target.value });
-                        }}
+                        // value={values.message}
+                        // onChange={handleChange}
                         placeholder="Message"
                       ></textarea>
                     </div>
@@ -150,7 +140,12 @@ const ContactSection = () => {
               <li>
                 <span className="icon flaticon-symbol"></span>
                 <div className="info-featured">
-                  <a href="mailto:email@example.com">[email protected]</a>
+                  <a
+                    href="mailto:info.realarc@gmail.com"
+                    style={{ color: "black" }}
+                  >
+                    info.realarc@gmail.com
+                  </a>
                 </div>
               </li>
               <li>
@@ -173,7 +168,7 @@ const ContactSection = () => {
                 <h3>
                   Monday - Friday
                   <br />
-                  09:00 to 18:00
+                  09:00 AM to 05:00 PM
                 </h3>
               </li>
             </ul>

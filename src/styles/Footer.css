@@ -1,0 +1,35 @@
+.footer-widget.logo-widget .logo {
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.footer-widget.logo-widget img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* H2 Tag Right Side of Logo */
+.footer-widget.logo-widget .realarc {
+  text-align: center;
+  margin-top: -125px;
+  margin-left: 9rem;
+  margin-bottom: 5rem;
+  color: yellow;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-widget.logo-widget {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-widget.logo-widget .logo {
+    margin-bottom: 0; /* Reset margin */
+  }
+
+  .footer-widget.logo-widget h2 {
+    text-align: left; /* Align to the left */
+    margin-top: 2rem; /* Adjust margin as needed */
+  }
+}
